@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>blog</title>
+	<meta name="generator" content="TextMate http://macromates.com/">
+	<meta name="author" content="Ray Slakinski">
+	<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+	<script>
+	   $.getJSON("http://www.osync.org/samples/data/blog.php?callback=?", function(data) {
+	     console.log("got here");
+       $.each(data.items, function(i,item) {
+         $("#images").append(item.title);
+         $.each(item.attachments, function(i,attachment) {
+           if (attachment.type == "image/jpeg") {
+             $("#images").append("<img src='"+attachment.uri+"' />");
+           };
+         });
+       });
+	   });
+  
+	</script>
+	<!-- Date: 2009-08-06 -->
+</head>
+<body>
+  <div id="images"></div>
+</body>
+</html>
