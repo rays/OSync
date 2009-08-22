@@ -7,12 +7,11 @@
 <body>
 <h1 id="theosyncspecification">The oSync Specification</h1>
 
-<h2 id="whyosync">Why oSync</h2>
+<h2 id="whyosync">Why oSync?</h2>
 
 <p>Sure we have <a href="http://cyber.law.harvard.edu/rss/rss.html">RSS</a>, <a href="http://www.w3.org/TR/REC-rdf-syntax/">RDF</a>, 
 and <a href="http://www.atomenabled.org/developers/syndication/atom-format-spec.php">Atom</a> which I have been working with 
-for many years (I co-wrote the first Podcast desktop client iPodderX) and implement much of the RSS found at 
-<a href="http://www.mahalo.com">Mahalo.com</a> (where I work) There are two big issues with these formats&#8230; They all use 
+for many years. There are two big issues with these formats&#8230; They all use 
 <a href="http://en.wikipedia.org/wiki/XML">XML</a> which tends to be wordy and more importantly XML is not overly easy to parse 
 especially in languages like Javascript, PHP, Ruby and Python. However <a href="http://en.wikipedia.org/wiki/JSON">JSON</a> thankfully is! </p>
 
@@ -143,7 +142,7 @@ come and comment in the <a href="http://groups.google.com/group/osync-developmen
 <li>language: Based on the <a href="http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes">W3C standard language codes</a></li>
 <li>copywrite: A string describing the copywrite for this feed</li>
 <li>location: either text or lat&amp;lng <em>(Optional)</em></li>
-<li>pub_date&#8217;: Date the feed was first published in <a href="http://en.wikipedia.org/wiki/ISO-8601">ISO 8601</a> format example: 2009-08-05T11:17Z</li>
+<li>pub_date: Date the feed was first published in <a href="http://en.wikipedia.org/wiki/ISO-8601">ISO 8601</a> format example: 2009-08-05T11:17Z</li>
 <li>updated_date: Last time the feed was updated</li>
 <li>generator: What application/script created this output. Helpful for debugging. <em>(Optional)</em></li>
 <li>tags: A list of tags/keywords/categories that you wish to associate with this feed <em>(Optional)</em></li>
@@ -160,7 +159,7 @@ come and comment in the <a href="http://groups.google.com/group/osync-developmen
 <li>uri: URI location of where to find this item</li>
 <li>sources: A list of sources for this item. Sites like digg.com might want to specify the original article here. <em>(Optional)</em></li>
 <li>location: either text or lat&amp;lng <em>(Optional)</em></li>
-<li>pub_date&#8217;: Date item was first published in <a href="http://en.wikipedia.org/wiki/ISO-8601">ISO 8601</a> format example: 2009-08-05T11:17Z</li>
+<li>pub_date: Date item was first published in <a href="http://en.wikipedia.org/wiki/ISO-8601">ISO 8601</a> format example: 2009-08-05T11:17Z</li>
 <li>updated_date: Last time the feed was updated</li>
 <li>summary: A short description of this item <em>(Optional)</em></li>
 <li>body: The full text for this item</li>
@@ -182,16 +181,19 @@ come and comment in the <a href="http://groups.google.com/group/osync-developmen
 
 <ul>
 <li>uid: Unique ID for this attachment</li>
-<li>filename&#8217;: Allows you to specify a specific name for this file <em>(Optional)</em></li>
+<li>filename: Allows you to specify a specific name for this file <em>(Optional)</em></li>
 <li>uri: URI location of where to find this attachment</li>
-<li>pub_date&#8217;: Date item was first published in <a href="http://en.wikipedia.org/wiki/ISO-8601">ISO 8601</a> format example: 2009-08-05T11:17Z</li>
+<li>pub_date: Date item was first published in <a href="http://en.wikipedia.org/wiki/ISO-8601">ISO 8601</a> format example: 2009-08-05T11:17Z</li>
 <li>type: <a href="http://www.webmaster-toolkit.com/mime-types.shtml">Mime-type</a> that defines what type of attachment this is</li>
 <li>size: Attachment size in bytes</li>
 <li>duration: Duration in seconds, should be specified if type is audio or video <em>(Optional)</em></li>
 <li>location: either text or lat&amp;lng <em>(Optional)</em></li>
 <li>tags: A list of tags/keywords/categories that you wish to associate with this item <em>(Optional)</em></li>
-<li>hash: Hash for the file <em>(Optional)</em></li>
-<li>hash_type: To be specified if hash is set, should specify the algorythm used in lowercase <em>(Optional)</em></li>
+<li>hash: <a href="http://www.electrictoolbox.com/article/linux-unix-bsd/howto-check-md5-file/">Hash for the file</a>. Hashes are useful to help the consumer that they downloaded the file correctly <em>(Optional)</em></li>
+<li>hash_type: To be specified if hash is set and is not MD5 (MD5 is assumed) <em>(Optional)</em>
+<ul>
+<li>Note: Use lowercase (md5, sha256)</li>
+</ul></li>
 <li>explicit: Does the content contain explicit material? False if not specified <em>(Optional)</em></li>
 <li>block: This should stop a consumer from showing this file in their UI. False if not specified <em>(Optional)</em></li>
 </ul>
