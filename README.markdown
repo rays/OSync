@@ -122,6 +122,7 @@ None yet :( Be the first!
 ### Main Elements ###
 
 * uid: Unique ID for the feed itself, great for using with [SUP](http://code.google.com/p/simpleupdateprotocol/)
+* ping_feed: A central place to see which oSync feeds have been updated. Usually a location for a servers [SUP](http://code.google.com/p/simpleupdateprotocol/) feed _(Optional)_
 * title: Title of the feed
 * subtitle: Subtitle for this feed _(Optional)_
 * summary: A short description of this feed _(Optional)_
