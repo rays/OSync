@@ -61,15 +61,16 @@ None yet :( Be the first!
          "uri": "http://www.osync.org",
          "summary": "All the news you can use about your favorite new web syndication format OSync",
          "copywrite": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0",
+         "copywrite_image": "http://creativecommons.org/images/public/somerights20.png",
          "pub_date": "2009-08-05T11:17Z",
-         "thumbnail": "http://www.osync.org/media/osync-32x32.jpg",
+         "image_thumbnail": "http://www.osync.org/media/osync-32x32.jpg",
          "tags": 
          [
              "web",
              "formats",
              "specifications"
          ],
-         "location": "Oakville, Ontario, Canada",
+         "location": "43.437933,-79.754251",
          "items": 
         [
                {
@@ -110,7 +111,7 @@ None yet :( Be the first!
                          "duration": 923282,
                          "type": "audio/mpeg",
                          "block": false,
-                         "size": 228223
+                         "bytes": 228223
                     }
                 ]
             }
@@ -121,21 +122,22 @@ None yet :( Be the first!
 
 ### Main Elements ###
 
-* uid: Unique ID for the feed itself, great for using with [SUP](http://code.google.com/p/simpleupdateprotocol/)
-* ping_feed: A central place to see which oSync feeds have been updated. Usually a location for a servers [SUP](http://code.google.com/p/simpleupdateprotocol/) feed _(Optional)_
+* uid: Unique ID for the feed itself, great for using in conjunction with [SUP](http://code.google.com/p/simpleupdateprotocol/), [PubSubHubbub](http://code.google.com/p/pubsubhubbub/) or [rssCloud](http://rsscloud.org/)
+* hub: A central place to see which oSync feeds have been updated. Usually a location for a servers [SUP](http://code.google.com/p/simpleupdateprotocol/), [PubSubHubbub](http://code.google.com/p/pubsubhubbub/) or [rssCloud](http://rsscloud.org/) location _(Optional)_
 * title: Title of the feed
 * subtitle: Subtitle for this feed _(Optional)_
 * summary: A short description of this feed _(Optional)_
 * uri: URI to where on this content came from
 * language: Based on the [W3C standard language codes](http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes)
 * copywrite: A string describing the copywrite for this feed
-* location: either text or lat&lng _(Optional)_
+* copywrite_image: Image representation of copywrite, such as a [Creative Commons](http://creativecommons.org/) logo _(Optional)_
+* location: A string containing either a text location such as "Oakville, Ontario, Canada" or latitude and longitude such as "43.437933,-79.754251" _(Optional)_
 * pub_date: Date the feed was first published in [ISO 8601](http://en.wikipedia.org/wiki/ISO-8601) format example: 2009-08-05T11:17Z
 * updated_date: Last time the feed was updated
 * generator: What application/script created this output. Helpful for debugging. _(Optional)_
 * tags: A list of tags/keywords/categories that you wish to associate with this feed _(Optional)_
 * image: Should be a square .jpg image that is at least 600 x 600 pixels
-* thumbnail: A thumbnail version (32x32) of the image in the 'image' key
+* image_thumbnail: A thumbnail version (32x32) of the image in the 'image' key
 * items: A list of items (see below for item description)
 
 ### Items ###
@@ -144,7 +146,7 @@ None yet :( Be the first!
 * title: title for this item
 * uri: URI location of where to find this item
 * sources: A list of sources for this item. Sites like digg.com might want to specify the original article here. _(Optional)_
-* location: either text or lat&lng _(Optional)_
+* location: A string containing either a text location such as "Oakville, Ontario, Canada" or latitude and longitude such as "43.437933,-79.754251" _(Optional)_
 * pub_date: Date item was first published in [ISO 8601](http://en.wikipedia.org/wiki/ISO-8601) format example: 2009-08-05T11:17Z
 * updated_date: Last time the feed was updated
 * summary: A short description of this item _(Optional)_
@@ -166,10 +168,10 @@ None yet :( Be the first!
 * filename: Allows you to specify a specific name for this file _(Optional)_
 * uri: URI location of where to find this attachment
 * pub_date: Date item was first published in [ISO 8601](http://en.wikipedia.org/wiki/ISO-8601) format example: 2009-08-05T11:17Z
-* type: [Mime-type](http://www.webmaster-toolkit.com/mime-types.shtml) that defines what type of attachment this is
-* size: Attachment size in bytes
+* mime_type: [Mime-type](http://www.webmaster-toolkit.com/mime-types.shtml) that defines what type of attachment this is
+* bytes: Attachment size in bytes
 * duration: Duration in seconds, should be specified if type is audio or video _(Optional)_
-* location: either text or lat&lng _(Optional)_
+* location: A string containing either a text location such as "Oakville, Ontario, Canada" or latitude and longitude such as "43.437933,-79.754251" _(Optional)_
 * tags: A list of tags/keywords/categories that you wish to associate with this item _(Optional)_
 * hash: [Hash for the file](http://www.electrictoolbox.com/article/linux-unix-bsd/howto-check-md5-file/). Hashes are useful to help the consumer that they downloaded the file correctly _(Optional)_
 * hash_type: To be specified if hash is set and is not MD5 (MD5 is assumed) _(Optional)_
