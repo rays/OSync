@@ -53,7 +53,7 @@ None yet :( Be the first!
     {
          "updated_date": "2009-08-05T12:17Z",
          "subtitle": "Content Syndcation via JSONP",
-         "uid": "osync-news-blog",
+         "uuid": "c4dfcb75-8cd5-47e1-8a09-b19141ec2df8",
          "language": "en",
          "title": "News about OSync",
          "image": "http://www.osync.org/media/osync-600x600.jpg",
@@ -76,7 +76,7 @@ None yet :( Be the first!
                {
                  "updated_date": "2009-08-05T11:17Z",
                  "body": "We lauched OSync today! we had a big party and it was all kinds of fun. I hope you like it!",
-                 "uid": "http://www.osync.org/posts/osync-launched",
+                 "uuid": "fd8e3a0e-5786-4583-9baa-bb65537eed70",
                  "title": "OSync Launched!",
                  "author": 
                 {
@@ -102,7 +102,7 @@ None yet :( Be the first!
                 [
                     {
                          "hash": "6c6d81147f00bd6adb710d22bfe69f05",
-                         "uid": "6c6d81147f00bd6adb710d22bfe69f05",
+                         "uuid": "25746ef0-b362-4d38-b4e6-a0443c634d7e",
                          "pub_date": "2009-08-05T11:17Z",
                          "explicit": false,
                          "uri": "http://www.osync.org/pcasts/osync-podcast-01.mp3",
@@ -122,7 +122,7 @@ None yet :( Be the first!
 
 ### Main Elements ###
 
-* uid: Unique ID for the feed itself, great for using in conjunction with [SUP](http://code.google.com/p/simpleupdateprotocol/), [PubSubHubbub](http://code.google.com/p/pubsubhubbub/) or [rssCloud](http://rsscloud.org/)
+* uuid: Unique ID for the feed itself, great for using in conjunction with [SUP](http://code.google.com/p/simpleupdateprotocol/), [PubSubHubbub](http://code.google.com/p/pubsubhubbub/) or [rssCloud](http://rsscloud.org/)
 * hub: A central place to see which oSync feeds have been updated. Usually a location for a servers [SUP](http://code.google.com/p/simpleupdateprotocol/), [PubSubHubbub](http://code.google.com/p/pubsubhubbub/) or [rssCloud](http://rsscloud.org/) location _(Optional)_
 * title: Title of the feed
 * subtitle: Subtitle for this feed _(Optional)_
@@ -142,7 +142,7 @@ None yet :( Be the first!
 
 ### Items ###
 
-* uid: Unique ID for this item
+* uuid: Unique ID for this item
 * title: title for this item
 * uri: URI location of where to find this item
 * sources: A list of sources for this item. Sites like digg.com might want to specify the original article here. _(Optional)_
@@ -164,7 +164,7 @@ None yet :( Be the first!
 
 #### Attachments ####
 
-* uid: Unique ID for this attachment
+* uuid: Unique ID for this attachment
 * filename: Allows you to specify a specific name for this file _(Optional)_
 * uri: URI location of where to find this attachment
 * pub_date: Date item was first published in [ISO 8601](http://en.wikipedia.org/wiki/ISO-8601) format example: 2009-08-05T11:17Z

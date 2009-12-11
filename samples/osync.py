@@ -1,7 +1,7 @@
 import simplejson
 
 osync_sample = {
-    'uid': 'osync-news-blog', # unique ID for the feed itself, great for using with SUP http://code.google.com/p/simpleupdateprotocol/
+    'uuid': 'c4dfcb75-8cd5-47e1-8a09-b19141ec2df8', # unique ID for the feed itself, great for using with SUP http://code.google.com/p/simpleupdateprotocol/
     'title': 'News about OSync',
     'subtitle': 'Content Syndcation via JSONP',
     'summary': 'All the news you can use about your favorite new web syndication format OSync',
@@ -21,7 +21,7 @@ osync_sample = {
     'thumbnail': 'http://www.osync.org/media/osync-32x32.jpg', # A thumbnail version (32x32) of the image in the 'image' key
     'items': [
                 {
-                    'uid': 'http://www.osync.org/posts/osync-launched',
+                    'uuid': 'fd8e3a0e-5786-4583-9baa-bb65537eed70',
                     'title': 'OSync Launched!',
                     'link': 'http://www.osync.org/posts/osync-launched',
                     'sources': [ # Optional, a list of sources for this item. Sites like digg.com might want to specifiy the original article here.
@@ -44,7 +44,7 @@ osync_sample = {
                     'body': 'We lauched OSync today! we had a big party and it was all kinds of fun. I hope you like it!',
                     'attachments': [
                                         {
-                                            'uid': '6c6d81147f00bd6adb710d22bfe69f05',
+                                            'uuid': '25746ef0-b362-4d38-b4e6-a0443c634d7e',
                                             'filename': 'osync-podcast-01.mp3', # Optional, allows you to specify a specific name for this file.
                                             'uri': 'http://www.osync.org/pcasts/osync-podcast-01.mp3', # usually http or https
                                             'pub_date': '2009-08-05T11:17Z',
@@ -58,7 +58,7 @@ osync_sample = {
                                             'block': False, # Optional, this should stop a consumer from showing this file in their UI
                                         },
                                         {
-                                            'uid': 'dfb421284dbdbaba7723bb9d32f63f0d',
+                                            'uuid': '9cf41fbe-aac0-4f25-8014-3135cd2260f6',
                                             'filename': 'party1.jpg',
                                             'uri': 'http://www.osync.org/images/party1.jpg',
                                             'pub_date': '2009-08-05T11:17Z',
@@ -73,7 +73,7 @@ osync_sample = {
                                                     ],
                                         },
                                         {
-                                            'uid': '288f7766e5653b8dd5b5faa17d08a0fe',
+                                            'uuid': 'db3376d7-76df-4ea7-852f-a6fa2e47af16',
                                             'filename': 'party2.jpg',
                                             'uri': 'http://www.osync.org/images/party2.jpg',
                                             'pub_date': '2009-08-05T11:17Z',
