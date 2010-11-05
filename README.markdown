@@ -23,31 +23,6 @@ While developing this format I set out with the following goals:
 This specification is considered ALPHA, and not ready for production use as it could change, I welcome everyone to please
 come and comment in the [oSync Development Google Group](http://groups.google.com/group/osync-development)
 
-### Sites uing oSync ###
-
-None yet :( Be the first!
-
-### Mailing List ###
-
-<table border=0 style="background-color: #fff; padding: 5px;" cellspacing=0>
-  <tr><td>
-  <img src="http://groups.google.com/intl/en/images/logos/groups_logo_sm.gif"
-         height=30 width=140 alt="Google Groups">
-  </td></tr>
-  <tr><td style="padding-left: 5px">
-  <b>Subscribe to oSync Development</b>
-  </td></tr>
-  <form action="http://groups.google.com/group/osync-development/boxsubscribe">
-  <tr><td style="padding-left: 5px;">
-  Email: <input type=text name=email>
-  <input type=submit name="sub" value="Subscribe">
-  </td></tr>
-</form>
-<tr><td align=right>
-  <a href="http://groups.google.com/group/osync-development">Visit this group</a>
-</td></tr>
-</table>
-
 ### Example ###
 
     {
@@ -70,7 +45,16 @@ None yet :( Be the first!
              "formats",
              "specifications"
          ],
-         "location": "43.437933,-79.754251",
+         "location": 
+         {
+             "name": "Funky Thai",
+             "address": "2383 Dundas Street West",
+             "city": "Oakville",
+             "state": "Ontario",
+             "zip": "L6M3X2"
+             "geolat": 43.439957,
+             "geolong", -79.772072
+         },
          "items": 
         [
                {
@@ -89,7 +73,16 @@ None yet :( Be the first!
                     "http://www.ospec.org"
                 ],
                  "uri": "http://www.osync.org/posts/osync-launched",
-                 "location": "Las Vegas, NV, USA",
+                 "location": 
+                 {
+                     "name": "Funky Thai",
+                     "address": "2383 Dundas Street West",
+                     "city": "Oakville",
+                     "state": "Ontario",
+                     "zip": "L6M3X2"
+                     "geolat": 43.439957,
+                     "geolong", -79.772072
+                 },
                  "exeprt": "We lauched OSync today!",
                  "pub_date": "2009-08-05T11:17Z",
                  "tags": 
@@ -131,7 +124,7 @@ None yet :( Be the first!
 * language: Based on the [W3C standard language codes](http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes)
 * copywrite: A string describing the copywrite for this feed
 * copywrite_image: Image representation of copywrite, such as a [Creative Commons](http://creativecommons.org/) logo _(Optional)_
-* location: A string containing either a text location such as "Oakville, Ontario, Canada" or latitude and longitude such as "43.437933,-79.754251" _(Optional)_
+* location: [Location](#) _(Optional)_
 * pub_date: Date the feed was first published in [ISO 8601](http://en.wikipedia.org/wiki/ISO-8601) format example: 2009-08-05T11:17Z
 * updated_date: Last time the feed was updated
 * generator: What application/script created this output. Helpful for debugging. _(Optional)_
@@ -140,13 +133,22 @@ None yet :( Be the first!
 * image_thumbnail: A thumbnail version (32x32) of the image in the 'image' key
 * items: A list of items (see below for item description)
 
+### Location ###
+* name: The name for the location _(Optional)_
+* address: Street Address _(Optional)_
+* city: City, Town, or Village for the location _(Optional)_
+* state: State or Provence _(Optional)_
+* zip: ZIPCODE or Postal Code _(Optional)_
+* geolat: Latitude _(Optional if geolong not specified)_
+* geolong: Longitude _(Optional if geolat not specified)_
+
 ### Items ###
 
 * uuid: Unique ID for this item
 * title: title for this item
 * uri: URI location of where to find this item
 * sources: A list of sources for this item. Sites like digg.com might want to specify the original article here. _(Optional)_
-* location: A string containing either a text location such as "Oakville, Ontario, Canada" or latitude and longitude such as "43.437933,-79.754251" _(Optional)_
+* location: see [Location](#) _(Optional)_
 * pub_date: Date item was first published in [ISO 8601](http://en.wikipedia.org/wiki/ISO-8601) format example: 2009-08-05T11:17Z
 * updated_date: Last time the feed was updated
 * summary: A short description of this item _(Optional)_
@@ -171,7 +173,7 @@ None yet :( Be the first!
 * mime_type: [Mime-type](http://www.webmaster-toolkit.com/mime-types.shtml) that defines what type of attachment this is
 * bytes: Attachment size in bytes
 * duration: Duration in seconds, should be specified if type is audio or video _(Optional)_
-* location: A string containing either a text location such as "Oakville, Ontario, Canada" or latitude and longitude such as "43.437933,-79.754251" _(Optional)_
+* location: [Location](#) _(Optional)_
 * tags: A list of tags/keywords/categories that you wish to associate with this item _(Optional)_
 * hash: [Hash for the file](http://www.electrictoolbox.com/article/linux-unix-bsd/howto-check-md5-file/). Hashes are useful to help the consumer that they downloaded the file correctly _(Optional)_
 * hash_type: To be specified if hash is set and is not MD5 (MD5 is assumed) _(Optional)_
