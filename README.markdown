@@ -91,7 +91,7 @@ come and comment in the [oSync Development Google Group](http://groups.google.co
                         "postedTime": "2009-08-05T11:17Z",
                         "explicit": false,
                         "permalinkUrl": "http://www.osync.org/pcasts/osync-podcast-01.mp3",
-                        "hash_type": "md5",
+                        "hashType": "md5",
                         "filename": "osync-podcast-01.mp3",
                         "duration": 923282,
                         "type": "audio/mpeg",
@@ -116,7 +116,7 @@ come and comment in the [oSync Development Google Group](http://groups.google.co
 * lang: Based on the [W3C standard language codes](http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes)
 * copywrite: A string describing the copywrite for this feed
 * copywriteImage: Image representation of copywrite, such as a [Creative Commons](http://creativecommons.org/) logo _(Optional)_
-* location: [Location](#) _(Optional)_
+* location: See [Location](#) _(Optional)_
 * postedTime: Date the feed was first published in [ISO 8601](http://en.wikipedia.org/wiki/ISO-8601) format example: 2009-08-05T11:17Z
 * updatedDate: Last time the feed was updated _(Optional)_
 * generator: What application/script created this output. Helpful for debugging. _(Optional)_
@@ -147,7 +147,7 @@ come and comment in the [oSync Development Google Group](http://groups.google.co
 * title: title for this item
 * permalinkUrl: Permanent URL of where to find this item
 * sources: A list of sources for this item. Sites like digg.com might want to specify the original article here. _(Optional)_
-* location: see [Location](#) _(Optional)_
+* location: See [Location](#) _(Optional)_
 * postedTime: Date item was first published in [ISO 8601](http://en.wikipedia.org/wiki/ISO-8601) format example: 2009-08-05T11:17Z
 * updatedDate: Last time the item was updated _(Optional)_
 * summary: A short description of this item _(Optional)_
@@ -169,13 +169,13 @@ come and comment in the [oSync Development Google Group](http://groups.google.co
 * filename: Allows you to specify a specific name for this file _(Optional)_
 * permalinkUrl: Permanent URL of where to find this attachment
 * postedTime: Date item was first published in [ISO 8601](http://en.wikipedia.org/wiki/ISO-8601) format example: 2009-08-05T11:17Z
-* mimeType: [Mime-type](http://www.webmaster-toolkit.com/mime-types.shtml) that defines what type of attachment this is
+* mimeType: [mime-type](http://www.webmaster-toolkit.com/mime-types.shtml) that defines what type of attachment this is
 * bytes: Attachment size in bytes
 * duration: Duration in seconds, should be specified if type is audio or video _(Optional)_
-* location: [Location](#) _(Optional)_
+* location: See [Location](#) _(Optional)_
 * categories: See [Categoies](#)
 * hash: [Hash for the file](http://www.electrictoolbox.com/article/linux-unix-bsd/howto-check-md5-file/). Hashes are useful to help the consumer that they downloaded the file correctly _(Optional)_
-* hash_type: To be specified if hash is set and is not MD5 (MD5 is assumed) _(Optional)_
+* hashType: To be specified if hash is set and is not MD5 (MD5 is assumed) _(Optional)_
  * Note: Use lowercase (md5, sha256)
 * explicit: Does the content contain explicit material? False if not specified _(Optional)_
 * blockConsumer: This should stop a consumer from showing this file in their UI. False if not specified _(Optional)_
