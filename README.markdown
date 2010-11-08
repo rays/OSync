@@ -4,9 +4,9 @@
 
 Sure we have [RSS](http://cyber.law.harvard.edu/rss/rss.html), [RDF](http://www.w3.org/TR/REC-rdf-syntax/), 
 and [Atom](http://www.atomenabled.org/developers/syndication/atom-format-spec.php) which I have been working with 
-for many years. There are two big issues with these formats... They all use 
-[XML](http://en.wikipedia.org/wiki/XML) which tends to be wordy and more importantly XML is not overly easy to parse 
-especially in langs like Javascript, PHP, Ruby and Python. However [JSON](http://en.wikipedia.org/wiki/JSON) thankfully is! 
+for many years. There are one big issues with these formats... They all use 
+[XML](http://en.wikipedia.org/wiki/XML) which tends to be wordy and more importantly XML is overly complex to parse 
+especially in languages like Javascript, PHP, Ruby and Python. However [JSON](http://en.wikipedia.org/wiki/JSON) thankfully is! 
 
 While developing this format I set out with the following goals:
 
