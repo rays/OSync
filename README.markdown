@@ -1,1 +1,1 @@
-Please see [osyn.org](http://osync.org) for the OSync specification
+Please see [osync.org](http://osync.org) for the OSync specification
