@@ -50,8 +50,8 @@ come and comment in the [oSync Development Google Group](http://groups.google.co
             "city": "Oakville",
             "state": "Ontario",
             "zip": "L6M3X2",
-            "geolat": 43.439957,
-            "geolong": -79.772072 
+            "latitude": 43.439957,
+            "longitude": -79.772072 
         },
         "items": [
             {
@@ -74,8 +74,8 @@ come and comment in the [oSync Development Google Group](http://groups.google.co
                     "city": "Oakville",
                     "state": "Ontario",
                     "zip": "L6M3X2",
-                    "geolat": 43.439957,
-                    "geolong": -79.772072 
+                    "latitude": 43.439957,
+                    "longitude": -79.772072 
                 },
                 "exeprt": "We lauched oSync today!",
                 "postedTime": "2009-08-05T11:17Z",
@@ -134,8 +134,8 @@ come and comment in the [oSync Development Google Group](http://groups.google.co
 * city: City, Town, or Village for the location _(Optional)_
 * state: State or Provence _(Optional)_
 * zip: ZIPCODE or Postal Code _(Optional)_
-* geolat: Latitude _(Optional if geolong not specified)_
-* geolong: Longitude _(Optional if geolat not specified)_
+* latitude: Latitude _(Optional if longitude not specified)_
+* longitude: Longitude _(Optional if latitude not specified)_
 
 #### Categories ####
 
