@@ -35,10 +35,10 @@ come and comment in the [oSync Development Google Group](http://groups.google.co
         "generator": "TextMate http://macromates.com/",
         "permalinkUrl": "http://www.osync.org",
         "summary": "All the news you can use about your favorite new web syndication format oSync",
-        "copywrite": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0",
-        "copywriteImage": "http://creativecommons.org/images/public/somerights20.png",
+        "copyrite": "Creative Commons Attribution-Noncommercial-No Derivative Works 3.0",
+        "copyriteImage": "http://creativecommons.org/images/public/somerights20.png",
         "postedTime": "2009-08-05T11:17Z",
-        "imageThumbnail": "http://www.osync.org/media/osync-32x32.jpg",
+        "thumbnail": "http://www.osync.org/media/osync-32x32.jpg",
         "categories": [
             "web",
             "formats",
@@ -114,15 +114,15 @@ come and comment in the [oSync Development Google Group](http://groups.google.co
 * summary: A short description of this feed _(Optional)_
 * permalinkUrl: permalinkUrl to where on this content came from
 * lang: Based on the [W3C standard language codes](http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes)
-* copywrite: A string describing the copywrite for this feed
-* copywriteImage: Image representation of copywrite, such as a [Creative Commons](http://creativecommons.org/) logo _(Optional)_
+* copyrite: A string describing the copyrite for this feed
+* copyriteImage: Image representation of copyrite, such as a [Creative Commons](http://creativecommons.org/) logo _(Optional)_
 * location: See [Location](#) _(Optional)_
 * postedTime: Date the feed was first published in [ISO 8601](http://en.wikipedia.org/wiki/ISO-8601) format example: 2009-08-05T11:17Z
 * updatedDate: Last time the feed was updated _(Optional)_
 * generator: What application/script created this output. Helpful for debugging. _(Optional)_
 * categories: See [Categoies](#) _(Optional)_
 * image: Should be a square .jpg image that is at least 600 x 600 pixels
-* imageThumbnail: A thumbnail version (32x32) of the image in the 'image' key
+* thumbnail: A thumbnail version (32x32) of the image in the 'image' key
 * items: A list of items (see below for item description)
 
 ### Globals ###
