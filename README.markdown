@@ -1,1 +1,1 @@
-Please see [rays.github.io/osync](https://rays.github.io/osync) for the OSync specification
+Please see [rays.github.io/OSync](https://rays.github.io/OSync/) for the OSync specification
